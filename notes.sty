@@ -1,0 +1,28 @@
+% notes template
+\ProvidesPackage{notes}[2017/01/06 v1.0 My custom notes template]
+%---- IMPORT 3RD PARTY PACKAGES ----%
+\usepackage[dvipsnames]{xcolor}
+\usepackage{mathtools, amsthm, amssymb, amsfonts, geometry, marginnote, graphicx, pgfplots, framed, multicol, pifont, stmaryrd, bbm, graphicx, enumitem}
+\usepackage{../macros}
+\graphicspath{{images/}}
+\pgfplotsset{compat=1.5}
+\usepackage{mleftright, hyperref}
+\semiisopage{} % Print placement in page
+\renewcommand{\rmdefault}{ppl} % rm
+\linespread{1.05} % Palatino needs more leading
+\usepackage[scaled]{helvet} % ss
+\usepackage{courier} % tt
+\usepackage{euler} % math
+\normalfont{}
+\usepackage[T1]{fontenc}
+\usetikzlibrary{arrows}
+%---- DEFINE STYLES ----%
+\chapterstyle{hangnum} % Chapter heading style
+\newtheoremstyle{thm}{\topsep}{\topsep}{\itshape}{}{\bfseries}{}{\newline}{}
+\theoremstyle{thm}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{lemma}{Lemma}[thm]
+\newtheorem{cor}{Corollary}[thm]
+\newtheorem{prop}{Proposition}[thm]
+\newtheorem{defn}{Definition}[thm]
+\newtheorem{ex}{Example}[thm]

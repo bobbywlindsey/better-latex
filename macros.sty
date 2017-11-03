@@ -1,0 +1,112 @@
+\ProvidesPackage{macros}[2017/01/06 v1.0 My custom macros]
+%---- MACROS FOR SETS ----%
+\newcommand{\znz}[1]{\mathbb{Z} / #1 \mathbb{Z}}
+\newcommand{\twoheadrightarrowtail}{\mapsto\mathrel{\mspace{-15mu}}\rightarrow}
+% popular set names
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\I}{\mathbb{I}}
+% popular vector space notation
+\newcommand{\V}{\mathbb{V}}
+\newcommand{\W}{\mathbb{W}}
+\newcommand{\B}{\mathbb{B}}
+\newcommand{\D}{\mathbb{D}}
+%---- MACROS FOR FUNCTIONS ----%
+% linear algebra
+\newcommand{\T}{\mathrm{T}}
+\renewcommand{\ker}{\mathrm{ker}}
+\newcommand{\range}{\mathrm{range}}
+\renewcommand{\span}{\mathrm{span}}
+\newcommand{\rref}{\mathrm{rref}}
+\renewcommand{\dim}{\mathrm{dim}}
+\newcommand{\col}{\mathrm{col}}
+\newcommand{\nullspace}{\mathrm{null}}
+\newcommand{\row}{\mathrm{row}}
+\newcommand{\rank}{\mathrm{rank}}
+\newcommand{\nullity}{\mathrm{nullity}}
+\renewcommand{\det}{\mathrm{det}}
+\newcommand{\proj}{\mathrm{proj}}
+\renewcommand{\H}{\mathrm{H}}
+\newcommand{\trace}{\mathrm{trace}}
+\newcommand{\diag}{\mathrm{diag}}
+\newcommand{\card}{\mathrm{card}}
+% differential equations
+\newcommand{\laplace}[1]{\mathcal{L}\{#1\}}
+\newcommand{\F}{\mathrm{F}}
+% misc
+\newcommand{\sign}{\mathrm{sign}}
+\newcommand{\softmax}{\mathrm{softmax}}
+\renewcommand{\th}{\mathrm{th}}
+\newcommand{\adj}{\mathrm{adj}}
+\newcommand{\hyp}{\mathrm{hyp}}
+\renewcommand{\max}{\mathrm{max}}
+\renewcommand{\min}{\mathrm{min}}
+\newcommand{\where}{\mathrm{\ where\ }}
+% statistics
+\newcommand{\cov}{\mathrm{cov}}
+\newcommand{\var}{\mathrm{var}}
+\newcommand{\E}{\mathrm{E}}
+\newcommand{\prob}{\mathrm{prob}}
+\newcommand{\unif}{\mathrm{unif}}
+\newcommand{\invNorm}{\mathrm{invNorm}}
+\newcommand{\invT}{\mathrm{invT}}
+% real analysis
+\renewcommand{\sup}{\mathrm{sup}}
+\renewcommand{\inf}{\mathrm{inf}}
+%---- MACROS FOR ALIASES AND REFORMATTING ----%
+% logic
+\newcommand{\forevery}{\ \forall\ }
+\newcommand{\OR}{\lor}
+\newcommand{\AND}{\land}
+\newcommand{\then}{\implies}
+% set theory
+\newcommand{\impropersubset}{\subseteq}
+\newcommand{\notimpropersubset}{\nsubseteq}
+\newcommand{\propersubset}{\subset}
+\newcommand{\notpropersubset}{\not\subset}
+\newcommand{\union}{\cup}
+\newcommand{\intersect}{\cap}
+\newcommand{\intersection}[2]{\bigcap\limits_{#1}^{#2}}
+% linear algebra
+\newcommand{\subspace}{\le}
+\newcommand{\angles}[1]{\langle #1 \rangle}
+\newcommand{\identity}{\mathbbm{1}}
+\newcommand{\orthogonal}{\perp}
+\renewcommand{\parallel}[1]{#1^{||}}
+% calculus
+\newcommand{\integral}[2]{\int\limits_{#1}^{#2}}
+\newcommand{\limit}[1]{\lim\limits_{#1}}
+\newcommand{\approaches}{\rightarrow}
+\renewcommand{\to}{\rightarrow}
+\newcommand{\convergesto}{\rightarrow}
+% algebra
+\newcommand{\summation}[2]{\sum\limits_{#1}^{#2}}
+\newcommand{\product}[2]{\prod\limits_{#1}^{#2}}
+\newcommand{\by}{\times}
+% exists commands
+\newcommand{\notexist}{\nexists\ }
+\newcommand{\existsatleastone}{\exists\ }
+\newcommand{\existsonlyone}{\exists!}
+\newcommand{\existsunique}{\exists!}
+\let\oldexists\exists
+\renewcommand{\exists}{\ \oldexists\ }
+% statistics
+\newcommand{\distributed}{\sim}
+\newcommand{\onetoonecorresp}{\sim}
+\newcommand{\independent}{\perp\!\!\!\perp}
+\newcommand{\conditionedon}{\ |\ }
+\newcommand{\given}{\ |\ }
+\newcommand{\notg}{\ngtr}
+\newcommand{\yhat}{\hat{y}}
+\newcommand{\betahat}{\hat{\beta}}
+\newcommand{\sigmahat}{\hat{\sigma}}
+\newcommand{\muhat}{\hat{\mu}}
+\newcommand{\transmatrix}{\mathrm{P}}
+\renewcommand{\choose}{\binom}
+% misc
+\newcommand{\infinity}{\infty}
+\renewcommand{\bold}{\textbf}
+\newcommand{\italics}{\textit}
